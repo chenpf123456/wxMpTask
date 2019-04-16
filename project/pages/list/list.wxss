@@ -1,0 +1,13 @@
+/* pages/list/list.wxss */
+.list-item{
+  width: 100%;
+  width: 700rpx;
+  margin: 0 auto;
+}
+.list-item{
+  width: 100%;
+  font-size: 30rpx;
+  line-height: 1.5;
+  padding: 1.5em 0.75em;
+  border-bottom: 1px solid #eaeaea;
+}

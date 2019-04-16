@@ -1,0 +1,30 @@
+<!--pages/list/list.wxml-->
+<text>pages/list/list.wxml</text>
+功能列表页
+<view class="list-wrap">
+  <view>
+    <navigator class="list-item" url="/pages/getLocation/getLocation" hover-class="navigator-hover">
+      B.显示地理位置，电量等
+    </navigator>
+  </view>
+  <view>
+    <navigator class="list-item" url="/pages/bindPhone/bindPhone" hover-class="navigator-hover">
+      C.绑定手机号
+    </navigator>
+  </view>
+  <view >
+    <navigator class="list-item" url="/pages/camera/camera" hover-class="navigator-hover">
+      D.拍照录制视频
+    </navigator>
+  </view>
+  <view>
+    <navigator class="list-item" url="/pages/scanCode/scanCode" hover-class="navigator-hover">
+      F.扫描二维码
+    </navigator>
+  </view>
+  <view>
+    <navigator class="list-item" url="/pages/record/record" hover-class="navigator-hover">
+      G.录制音频，播放音频
+    </navigator>
+  </view>
+</view>

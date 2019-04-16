@@ -1,12 +1,17 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/list/list",
+    "pages/scanCode/scanCode",
+    "pages/record/record",
+    "pages/camera/camera",
+    "pages/getLocation/getLocation",
+    "pages/bindPhone/bindPhone"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

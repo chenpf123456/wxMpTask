@@ -1,0 +1,3 @@
+<!--pages/getLocation/getLocation.wxml-->
+<text>pages/getLocation/getLocation.wxml</text>
+获取并显示当前地理位置，手机电量网络类型。
