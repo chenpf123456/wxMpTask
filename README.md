@@ -5,3 +5,5 @@
  这是一个微信小程序】
  sfsdafasdfsad
  qweqweqweqweqwe
+ 
+# 更新扫描二维码功能 
