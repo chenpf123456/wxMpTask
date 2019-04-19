@@ -1,3 +1,5 @@
 <!--pages/scanCode/scanCode.wxml-->
 <text>pages/scanCode/scanCode.wxml</text>
 f. 小程序内扫描二维码，并显示二维码内容。
+<button style="margin-top:50px;" bindtap="getQRCode">扫一扫</button>
+<view>{{ qRCodeMsg }}</view>
