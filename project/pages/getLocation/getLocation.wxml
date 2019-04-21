@@ -1,3 +1,15 @@
 <!--pages/getLocation/getLocation.wxml-->
-<text>pages/getLocation/getLocation.wxml</text>
-获取并显示当前地理位置，手机电量网络类型。
+<map id="myMap" show-location />
+
+<button type="primary" bindtap="getMyCurrentLocation" class="btn">获取当前位置</button>
+<button type="primary" bindtap="getPhoneBatteryInfo" class="btn">获取电量信息</button>
+<button type="primary" bindtap="getPhoneNetworkType" class="btn">获取网络类型</button>
+<view class="lbl">剩余电量：</view>
+<view class="txt">{{level}}</view>
+<view class="lbl">是否正在充电中：</view>
+<view class="txt">{{chargeStr}}</view>
+<view class="lbl">当前网络类型：</view>
+<view class="txt">{{networkType}}</view>
+
+
+

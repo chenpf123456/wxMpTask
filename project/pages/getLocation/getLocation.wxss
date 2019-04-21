@@ -1,1 +1,14 @@
 /* pages/getLocation/getLocation.wxss */
+.btn{
+  margin-top: 5px;
+}
+
+.lbl{
+  font-size: 16px;
+  color: red;
+  margin-left: 5px;
+}
+
+.txt{
+  margin-left: 5px;
+}
