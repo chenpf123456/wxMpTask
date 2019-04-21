@@ -1,1 +1,18 @@
 /* pages/bindPhone/bindPhone.wxss */
+.all {
+ border-top: 1rpx solid #efefef;
+ border-bottom: 1rpx solid #efefef;
+ height: 98rpx;
+ font-size: 28rpx;
+ display: flex;
+ align-items: center;
+}
+button {
+ width: 480rpx;
+ height: 80rpx;
+ background-color: #7ecffd;
+ font-size: 30rpx;
+ color: #fff;
+ border-radius: 8px;
+ margin: 50rpx auto;
+}

@@ -1,3 +1,10 @@
 <!--pages/bindPhone/bindPhone.wxml-->
 <text>pages/bindPhone/bindPhone.wxml</text>
 绑定手机号
+<form bindsubmit='formSubmit'>
+ <view class='all'>
+  <text>手机号：</text>
+  <input name="phone" placeholder='请输入手机号' type='number' style='color:#333' placeholder-style="color:#666" maxlength="11" bindinput='blurPhone'></input>
+ </view>
+ <button formType="submit">提交</button>
+</form>
