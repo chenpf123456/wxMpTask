@@ -62,5 +62,55 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  startRecordVoice: function () {
+    wx.showToast({
+      title: '开始录音',
+      icon: 'loading',
+      duration: 1000
+    })
+    var that = this;
+    wx.startRecord({
+      success: function (res) {
+        wx.hideToast()
+        wx.showToast({
+          title: '恭喜!录音成功',
+          icon: 'success',
+          duration: 1000
+        })
+        // 调用了停止录音接口就会触发这个函数，res.tempFilePath为录音文件临时路径
+        var tempFilePath = res.tempFilePath
+        that.setData({
+          path: res.tempFilePath,
+        })
+      },
+      fail: function (res) {
+        //录音失败的处理函数
+        wx.showModal({
+          title: 'warning!!!',
+          content: '录音失败!',
+          success(res) {
+            if (res.confirm) {
+              console.log('用户点击确定')
+            } else if (res.cancel) {
+              console.log('用户点击取消')
+            }
+          }
+        })
+      }
+    })
+  },
+
+  stopRecordVoice: function () {
+    wx.stopRecord()
+  },
+
+  playRecordVoice: function () {
+    var that = this;
+    wx.playVoice({
+      filePath: this.data.path // src可以是录音文件临时路径
+    })
   }
+
 })

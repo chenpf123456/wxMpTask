@@ -1,3 +1,20 @@
 <!--pages/record/record.wxml-->
 <text>pages/record/record.wxml</text>
-g. 录制一段音频，播放录制的音频  第一次修改
+g. 录制一段音频，播放录制的音频
+<button class="button1" type='primary' size="default" bindtap="startRecordVoice">
+
+<text decode="true">开始录音</text>
+
+</button>
+
+<button class="button2" type='primary' size="default" bindtap="stopRecordVoice">
+
+<text decode="true">停止录音</text>
+
+</button>
+
+<button class="button3" type='primary' size="default" bindtap="playRecordVoice">
+
+<text decode="true">播放录音</text>
+
+</button>
