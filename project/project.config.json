@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.5",
+	"libVersion": "2.6.6",
 	"appid": "wx7e750e0b560fbcb2",
 	"projectname": "wxMpTask1",
 	"debugOptions": {

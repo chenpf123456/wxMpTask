@@ -1,3 +1,15 @@
 <!--pages/camera/camera.wxml-->
 <text>pages/camera/camera.wxml</text>
 d. 使用相机拍照，录制视频
+<image src="{{tempFilePaths}}" mode="aspectFit" style="width: 100%; height: 400rpx"/>
+<button type="default" class="button2" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="openCamera" hover-class="other-button-hover"> 拍照 </button>
+<camera class="weui-camera" mode="normal" device-position="back" flash="off"></camera>
+<rich-text nodes='<br />'></rich-text>
+<button class="button1" type="primary" size="default" bindtap="startRecord">
+<text decode="true">录像</text>
+</button>
+<view>
+<image wx:if="{{imagesrc}}" src="{{imagesrc}}"></image>
+<video wx:if="{{videosrc}}" src="{{videosrc}}"></video>
+</view>
